@@ -1,0 +1,227 @@
+<html>
+<head>
+<title>mmyReferences | Readme</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<script type="text/javascript">
+function show(id) {
+  var item = document.getElementById(id);
+  
+  if (item.style.display)
+  value = '';
+  else
+  value = 'none';
+  
+  item.style.display = value;
+}
+  </script>
+<h1 style="margin-bottom: -5px"><font color="#666666">Wordpress Plugin - mmyReferences 
+1.3</font></h1>
+<hr width="550" size="1" align="left" color="#666666">
+Mit dem Wordpress Plugin <i>mmyReferences</i> k&ouml;nnt Ihr schnell und einfach über 
+Tags (<i>&lt;ref&gt;URL&lt;/ref&gt;</i>) Quellenangaben in Eure Betr&auml;ge einf&uuml;gen. 
+<p>mmyReferences ist Danke
+<a target="_blank" href="http://www.normanschwaneberg.de">Norman Schwaneberg</a> 
+XHTML 1.1 valide.</p>
+<p>Beispiel:</p>
+<p align="right">
+<font size="1">(Quelle:
+<a target="_blank" title="Quelle: http://news.mkswork.de" href="http://news.mkswork.de">
+http://news.mkswork.de</a>)</font><br />
+</p>
+<h2>Dokumentation <span style="font-weight: 400"><font size="2">(Stand 21. 
+Februar 
+2008)</font></span></h2>
+<div style=' padding: 1px;'><b><a href='#' onclick='show("author"); return false;'>
+	Autor und Kontakt</strong></a></b><br/>
+</div>
+<div id="author" style='display: none'>
+	<p><b>Autor</b>:&nbsp;&nbsp;&nbsp;&nbsp; 
+	Markus Kau&szlig;en<br>
+	<b>E-Mail</b>:&nbsp;&nbsp;&nbsp;
+	<a href="mailto:mail@mkswork.de?subject=mmyReferences">mail@mkswork.de</a><br>
+	<b>Website</b>:&nbsp; <a target="_blank" href="http://www.mkswork.de/">mkswork.de</a></p>
+</div>
+<div style=' padding: 1px;'><b><a href='#' onclick='show("install"); return false;'>
+	Installation</strong></a></b><br/>
+</div>
+<div id="install" style='display: none'>
+	<ol>
+		<li>Datei <i>mmyref.php</i> in das Wordpress-Verzeichnis 
+		<i>wp-content/plugins</i> einfügen.</li>
+		<li>Folgenden Eintrag in Eure CSS-Datei einfügen und, wenn Ihr möchtet, 
+		anpassen:<br>
+		<font face="Courier New">.mmyref {<br>
+		font-family: arial, verdana, tahoma, helvetica, sans-serif;<br>
+		font-size:10px;<br>
+		padding:0px 0px 0px 20px;<br>
+		margin:0px 0px 0px 230px;<br>
+		float:right;<br>
+		}</font></li>
+		<li>In den Administrationsbereich von Wordpress einloggen und unter dem 
+		Men&uuml;punkt <i>Plugins</i> das Plugin <i>mmyReferences</i> aktivieren.</li>
+	</ol>
+	<p>Das Plugin kann nun verwendet werden. Weiteres dazu unter <i>Anwendung 
+	und Gebrauch</i>.</p>
+</div>
+<div style=' padding: 1px;'><b><a href='#' onclick='show("usage"); return false;'>
+	Anwendung und Gebrauch</strong></a></b><br/>
+</div>
+<div id="usage" style='display: none'><p>Alle &uuml;ber das Plugin eingefügten 
+	Quellenangaben werden in der Standard-Schriftart des Beitrags rechtsbündig 
+	in Schriftgröße 10 Pixel von Klammern umgeben eingef&uuml;gt. Beispiele:</p>
+	<p align="right"><font size="1">(<a target="_blank" title="Quelle: http://news.mkswork.de" href="http://news.mkswork.de">via</a>)</font></p>
+	<p align="right"><font size="1">(Quelle:
+	<a target="_blank" title="Quelle: http://news.mkswork.de" href="http://news.mkswork.de">
+	http://news.mkswork.de</a>)</font></p>
+	<p align="left">Beim Schreiben wechselt Ihr von der visuellen Darstellung 
+	des Beitrags in die Code-Darstellung und k&ouml;nnt nun einen der folgenden Tags 
+	einf&uuml;gen:</p>
+	<table border="0" width="755" style="border-collapse: collapse">
+		<tr>
+			<td width="379">&lt;via&gt;urlderquelle&lt;/via&gt;</td>
+			<td width="341">(<a href="urlderquelle.de">via</a>)</td>
+		</tr>
+		<tr>
+			<td width="720" colspan="2">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="379">&lt;ref&gt;urlderquelle&lt;/ref&gt;</td>
+			<td width="341">(<a href="urlderquelle.de">Quelle</a>)</td>
+		</tr>
+		<tr>
+			<td width="720" colspan="2">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="379">&lt;refurl&gt;urlderquelle.de&lt;/refurl&gt;</td>
+			<td width="341">(Quelle: <a href="urlderquelle.de">urlderquelle.de</a>)</td>
+		</tr>
+		<tr>
+			<td width="720" colspan="2">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="379">&lt;see&gt;urlderquelle.de&lt;/see&gt;</td>
+			<td width="341">(Siehe auch <a href="urlderquelle.de">
+			urlderquelle.de</a>)</td>
+		</tr>
+		<tr>
+			<td width="720" colspan="2">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="379">&lt;more&gt;urlderquelle.de&lt;/more&gt;</td>
+			<td width="341">(Weitere Infos <a href="urlderquelle.de">hier</a>.)</td>
+		</tr>
+		<tr>
+			<td width="720" colspan="2">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="379">&lt;moreurl&gt;urlderquelle.de&lt;/moreurl&gt;</td>
+			<td width="341">(Weitere Infos unter <a href="urlderquelle.de">
+			urlderquelle.de</a>)</td>
+		</tr>
+		<tr>
+			<td width="720" colspan="2">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="379">&lt;url&gt;Text vor dem Link,urlderquelle.de,Linktext&lt;/url&gt;</td>
+			<td width="341">(Text vor dem Link
+			<a href="urlderquelle.de">Linktext</a>)</td>
+		</tr>
+		<tr>
+			<td width="720" colspan="2">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="720" colspan="2"><b>Costum Reference</b></td>
+		</tr>
+		<tr>
+			<td height="22" colspan="2">Beim Tag für benutzerdefinierte 
+			Quellenangaben kann der Text vor dem Link, die URL,der Linktext und 
+			der Text nach dem Link angegeben werden, jeweils durch Kommata 
+			getrennt:</td>
+		</tr>
+		<tr>
+			<td height="22" width="720" colspan="2">&nbsp;</td>
+		</tr>
+		<tr>
+			<td height="22" width="379">&lt;cref&gt;Text vor dem 
+			Link,urlderquelle.de,Linktext,Text nach dem Link<b>.</b>&lt;/cref&gt;</td>
+			<td width="341" height="22">(Text vor dem Link
+			<a href="urlderquelle.de">Linktext</a> Text nach dem Link.)</td>
+		</tr>
+		<tr>
+			<td height="22" width="720" colspan="2">&nbsp;</td>
+		</tr>
+		<tr>
+			<td height="22" width="749" colspan="2">Durch den Text nach dem Link 
+			k&ouml;nnen beispielsweise Satzzeichen eingetragen werden. Soll nach dem 
+			Link kein Text mehr folgen, kann dieser Eintrag einfach ausgelassen 
+			werden. <b>Wichtig</b> ist jedoch, dass dann das Komma nach dem 
+			Linktext dennoch gesetzt wird. Also: <i>&lt;cref&gt;Text vor dem 
+			Link,urlderquelle.de,Linktext,&lt;/cref&gt;</i></td>
+		</tr>
+	</table>
+	<p>&nbsp;</div>
+<div style=' padding: 1px;'><b><a href='#' onclick='show("demo"); return false;'>
+	Demo</a></b><br/>
+</div>
+<div id="demo" style='display: none'><p>Eine Demo von dem Plugin findet Ihr
+	<a target="_blank" href="http://www.mkswork.de/mmyreferences-wordpress-plugin/">hier</a>.</p>
+</div>
+<div style=' padding: 1px;'><b><a href='#' onclick='show("download"); return false;'>
+	Download</a></b><br/>
+</div>
+<div id="download" style='display: none'><p>Die aktuelle Version von mmyNews 
+	kann
+	<a target="_blank" href="http://www.mkswork.de/wnews/mmyreferences-wordpress-plugin/">
+	hier</a> heruntergeladen werden.</p>
+</div>
+<div style=' padding: 1px;'><b><a href='#' onclick='show("costum"); return false;'>
+	Plugin an die eigenen Bed&uuml;rfnisse anpassen</a></b><br/>
+</div>
+<div id="costum" style='display: none'><p>Wenn Euch die M&ouml;glichkeiten von &lt;cref&gt; 
+	nicht ausreichen, k&ouml;nnt das Plugin bzw. auch die Formatierungen einfach an 
+	Eure eigenen Bed&uuml;rfnisse anpassen. &Ouml;ffnet dafür die <i>mmyref.php</i>-Datei 
+	und werft mal einen Blick auf die Zeilen nach dem Kommentar &quot;//(via)&quot;</p>
+	<p><font color="#FF0000">$linkalllinks = 
+	preg_replace(&#39;/&lt;via&gt;(.*?)&lt;\/via&gt;/i&#39;,&#39;</font>&lt;span 
+	class=&quot;mmyref&quot;&gt;<b>(</b><font color="#FF0000">&lt;a href=&quot;$1&quot;</font><b> target=&quot;_blank&quot; 
+	title=&quot;Quelle: $1&quot;&gt;via&lt;/a&gt;)</b>&lt;/span&gt;<font color="#FF0000">&#39;,$linkalllinks);</font></p>
+	<p>Entscheident ist dafür vor allem der fett markierte Teil (Rot Markiertes 
+	ändert Ihr am Besten nicht, außer Ihr wisst natürlich was Ihr da tut.). Soll 
+	da nicht &quot;via&quot; stehen oder vielleicht keine Klammern, könnt Ihr das 
+	ersetzen. Formatierungen ändert Ihr in den Zeilen, die Ihr in Eure CSS-Datei 
+	einfügen müsst. </p>
+</div>
+<div style=' padding: 1px;'><b><a href='#' onclick='show("problem"); return false;'>
+	Probleml&ouml;sungen</a></b><br/>
+</div>
+<div id="problem" style='display: none'><p><b>Wenn ich &quot;&lt;via&gt;urlderquelle&lt;/via&gt;&quot; 
+	oder einen anderen Tag eintrage, wird nichts umgewandelt?<br>
+	</b>Ist das Plugin wirklich im Wordpress-Administrationsbreich aktiviert?<br>
+	Hast du &quot;&lt;via&gt;urlderquelle&lt;/via&gt;&quot; auch wirklich in das&nbsp; Code-Feld 
+	eingetragen? Wenn du auf der Seite zum Schreiben eines Beitrags bist, siehst 
+	du unter dem Textfeld für den Titel zwei Schaltflächen: &quot;Visuell&quot; und 
+	&quot;Code&quot;. Im visuellen Modus siehst du den Beitrag so, wie er sp&auml;ter auch 
+	erscheint (WYSIWYG-Editor). Unter &quot;Code&quot; siehst du den HTML-Code deines 
+	Textes. Dort musst du &quot;&lt;via&gt;urlderquelle&lt;/via&gt;&quot; eintragen.</p>
+	<p><b>&lt;cref&gt; und &lt;url&gt; funktionieren irgendwie nicht?<br>
+	</b>Habt Ihr vielleicht versucht eine Spiegel Online URL oder eine sonstige 
+	andere URL als Quelle anzugeben, die Komata beinhalten? Dann funktioniert 
+	die Trennug nicht korrekt. Für die nächste Release wird ggf. ein neues 
+	Trennsymbol eingefügt.<br>
+	&nbsp;</p>
+	<p><b>Der Text sieht aus wie der Standardtext von meinem Blog und ist nicht 
+	rechtsbündig.<br>
+	</b>Bitte füge in deine CSS-Datei die folgenden Zeilen ein:</p>
+	<p><font face="Courier New">.mmyref {<br>
+	font-family: arial, verdana, tahoma, helvetica, sans-serif;<br>
+	font-size:10px;<br>
+	padding:0px 0px 0px 20px;<br>
+	margin:0px 0px 0px 230px;<br>
+	float:right;<br>
+	}</font> </p>
+</div>
+</body>
+
+</html>
